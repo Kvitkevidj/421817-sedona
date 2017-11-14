@@ -22,7 +22,50 @@
             <h1 class="visually-hidden">Поиск гостиницы</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр услуг</h2>
-                <!-- Здесь будет форма -->
+                <form class="user" method="post"  action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value, daysoutputtt.value=dayscounttt.value">
+                    <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <p>
+                            <input type="checkbox" name="baxter" id="filter-pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-wi-fi">
+                            <label for="filter-wi-fi">Wi-fi</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <p>
+                            <input type="checkbox" name="baxter" id="filter-hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-motels" checked>
+                            <label for="filter-motels">Мотель</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-apartments" checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Стоимость в сутки (р):</legend>
+                        <p>
+                            <output name="daysoutput">от 0</output>
+                            <output name="daysoutputtt">до 3000</output>
+                        </p>
+                        <p>
+                            <input type="range" id="dayscount" name="dayscount" min="1" max="3000" step="1" aria-label="Минимальное значение">
+                            <input type="range" id="dayscounttt" name="dayscounttt" min="1" max="3000" step="1" aria-label="Максимальное значение">
+                        </p>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
             </section>
             <section class="sorting">
                 <p class="sorting-found">Найдено:3</p>

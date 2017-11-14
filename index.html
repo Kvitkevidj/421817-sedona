@@ -76,10 +76,28 @@
             <section class="search">
                 <h3>Заинтересовались?</h3>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <p class="search-btn">
-                    <a class="button" href="#">Поиск гостиницы в Седоне</a>
-                </p>
-                <!-- Здесь будет форма -->
+                <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend><a class="button" href="#">Поиск гостиницы в Седоне</a></legend>
+                        <p>
+                            <label for="check-in">Дата заезда</label>
+                            <input id="check-in" type="date" name="created">
+                        </p>
+                        <p>
+                            <label for="check-out">Дата выезда</label>
+                            <input id="check-out" type="date" name="created">
+                        </p>
+                        <p>
+                            <label for="adults">Взрослые</label>
+                            <input id="adults" type="number" name="num" min="1" max="10" value="1">
+                        </p>
+                        <p>
+                            <label for="kids">Дети</label>
+                            <input id="kids" type="number" name="num" min="1" max="10" value="1">
+                        </p>
+                        <button type="submit">Найти</button>
+                    </fieldset>
+                </form>
             </section>
             <section class="map">
                 <h2 class="visually-hidden">Карта</h2>
