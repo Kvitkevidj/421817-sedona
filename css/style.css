@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.site-navigation li {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.greeting {
+    background-image: url(../img/background%20photo.jpg);
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.features-header article {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.features-header p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.features-item h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.features-item p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.features-item-white {
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #83B3D0;
+}
+
+.features-item-white h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.features-item-white p {
+    font-size: 14px;
+}
+
+.features-grey {
+    background-color: #EEEEEE;
+}
+
+.services-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.services-item p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.search h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.search p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.search-btn a {
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #756358;
+}
+
+form p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+form button {
+    color: #ffffff;
+    background-color: #83B3D0;
+}
