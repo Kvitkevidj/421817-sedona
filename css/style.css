@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 img {
@@ -26,7 +27,6 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
 .main-nav {
@@ -428,17 +428,79 @@ img {
 .sorting {
     display: flex;
     justify-content: space-around;
+    
+    border-bottom: 2px solid #E4E4E4;
 }
 
 .catalog-item {
     display: flex;
     justify-content: space-between;
+    padding: 30px 50px;
+    border-bottom: 2px solid #E4E4E4;
 }
 
+.catalog-item-image {
+    width: 135px;
+}
+
+.catalog-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: 260px;
+    margin: 0 30px;
+}
+
+.catalog-description > h2:first-child {
+    width: 500px;
+   
+}
+.catalog-yet {
+    width: 110px;
+    
+    background-color: antiquewhite;
+}
+
+.catalog-reservation {
+    width: 140px;
+    
+    background-color: aqua;
+}
+.catalog-description h2 {
+    margin: 0;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.catalog-rating {
+    margin-left: auto;
+}
+.catalog-rating-star {
+    width: 110px;
+}
+
+.rate {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/filter-bg.jpg);
+}
+
+.catalog-rating-text {
+    width: 110px;
+    height: 28px;
+    
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    
+    background-color: #F2F2F2;
+}
 .main-footer {
-  padding: 40px 0;
+    padding: 40px 0;
   
-  background-image: transparent;
+    background-image: transparent;
 }
 
 .main-footer .container {
