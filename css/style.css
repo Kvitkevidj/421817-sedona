@@ -251,10 +251,44 @@ img {
     justify-content: space-between;
     width: 456px;
 }
+
+.minus-icon {
+    width: 40px;
+    height: 40px;
+    
+    background-image: url(../img/-grey.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    
+}
+.minus-icon:hover {
+    background-image: url(../img/-black.png);
+}
+.minus-icon:active {
+    background-image: url(../img/-blue.png);
+}
+.plus-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/+grey.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
+    border-radius: 0;
+}
+.plus-icon:hover {
+    background-image: url(../img/+black.png);
+}
+.plus-icon:active {
+    background-image: url(../img/+blue.png);
+}
 .search-item input[type="number"] {
     box-sizing: border-box;
-    width: 120px;
-    padding: 6px 40px;
+    width: 40px;
+    height: 40px;
+    padding: 6px 1px;
     text-align: center;
     font: inherit;
     color: #000000;
@@ -527,6 +561,7 @@ img {
     border-bottom: 2px solid #E4E4E4;
 }
 
+
 .sorting-found {
     font-size: 21px;
     line-height: 26px;
@@ -559,13 +594,14 @@ img {
     border-bottom: 1px dotted #81b3d2;
 }
 
-/*
-Хлебные крошки
-.sorting-type {
-     color: #81b3d2;
-     border: none;
+.sorting-type a:hover {
+    color: #81b3d2;
 }
-*/
+
+.sorting-type a:active {
+    color: #000000;
+    border: none;
+}
 
 .check-boxes {
     display: flex;
@@ -611,7 +647,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 260px;
-    height: fit-content;
     margin: 0 30px;
 }
 
@@ -624,7 +659,6 @@ img {
 
 .catalog-description h2 {
     margin: 0;
-    padding-bottom: 10px;
 
     font-size: 21px;
     line-height: 26px;
@@ -637,45 +671,48 @@ img {
 }
 
 .catalog-yet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 110px; 
 }
 
-.catalog-yet span {
-    margin: 0px;
-}
-.catalog-yet .catalog-blue {
+.catalog-blue {
     padding: 7px 15px;
     color: #ffffff;
     background-color: #81b3d2;
 }
 
-.catalog-yet .catalog-blue:hover {
+.catalog-blue:hover {
     color: #ffffff;
     background-color: #669ec0;
 }
 
-.catalog-yet .catalog-blue:active {
+.catalog-blue:active {
     color: #88b6d1;
     background-color: #5496bd;
 }
 
 .catalog-reservation {
-    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 145px; 
 }
 
-.catalog-reservation .catalog-brown {
+.catalog-brown {
     padding: 7px 15px;
     
     background-color: #766357;
     color: #ffffff;
 }
 
-.catalog-reservation .catalog-brown:hover {
+.catalog-brown:hover {
     color: #ffffff;
     background-color: #604e43;
 }
 
-.catalog-reservation .catalog-brown:active {
+.catalog-brown:active {
     color: #857871;
     background-color: #503e33;
 }
@@ -692,6 +729,7 @@ img {
 .catalog-rating-text {
     width: 110px;
     margin: 0;
+    padding: 7px 0;
     
     text-align: center;
     font-size: 14px;
@@ -712,6 +750,7 @@ img {
 
 .main-footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .hashtag {
@@ -750,24 +789,30 @@ img {
     background-color: #81b3d2;
 }
 
-.footer-social-ul li:hover {
+.social-button:hover {
     background-color: #669ec0;
 }
 
-.footer-social-ul li:active {
+.social-button:active path {
     background-color: #5496bd;
     fill: #88b6d1; 
 }
 
 .copyright {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: 70px;
 }
 
 .academy {
+    width: 120px;
+    margin-left: 10px;
+}
+.academy:hover path {
     fill: #81b3d2;
 }
 
-.academy path:active {
+.academy:active path {
     fill: #cacaca;
 }
