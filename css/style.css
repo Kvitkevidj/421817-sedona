@@ -51,6 +51,12 @@ img {
    margin-right: 120px;
 }
 
+.site-navigation a.site-navigation-hotels,
+.site-navigation a.site-navigation-hotels::after,
+.site-navigation a.site-navigation-hotels:hover {
+    color: #766357;
+}
+
 .site-navigation a:hover {
     color: #81b3d2;
 }
@@ -224,7 +230,7 @@ img {
 .search-item {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 456px;
 }
 
@@ -241,7 +247,7 @@ img {
 }
 
 .calendar-icon {
-    background-image: url("../img/calendar.svg");
+    background-image: url("../img/calendar-gr.svg");
     background-position: 290px center;
     background-repeat: no-repeat;
 }
@@ -255,7 +261,8 @@ img {
 .minus-icon {
     width: 40px;
     height: 40px;
-    
+    margin-left: auto;
+
     background-image: url(../img/-grey.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -278,6 +285,7 @@ img {
     background-color: #f2f2f2;
     border-radius: 0;
 }
+
 .plus-icon:hover {
     background-image: url(../img/+black.png);
 }
@@ -603,6 +611,14 @@ img {
     border: none;
 }
 
+.sorting-type a.breadcrumbs,
+.sorting-type a.breadcrumbs::after,
+.sorting-type a.sorting-type:active {
+    color: #81b3d2;
+    
+    border: none;
+}
+
 .check-boxes {
     display: flex;
     justify-content: space-between;
@@ -677,18 +693,18 @@ img {
     width: 110px; 
 }
 
-.catalog-blue {
+.catalog-yet .catalog-blue {
     padding: 7px 15px;
     color: #ffffff;
     background-color: #81b3d2;
 }
 
-.catalog-blue:hover {
+.catalog-yet .catalog-blue:hover {
     color: #ffffff;
     background-color: #669ec0;
 }
 
-.catalog-blue:active {
+.catalog-yet .catalog-blue:active {
     color: #88b6d1;
     background-color: #5496bd;
 }
@@ -700,19 +716,19 @@ img {
     width: 145px; 
 }
 
-.catalog-brown {
+.catalog-reservation .catalog-brown {
     padding: 7px 15px;
     
     background-color: #766357;
     color: #ffffff;
 }
 
-.catalog-brown:hover {
+.catalog-reservation .catalog-brown:hover {
     color: #ffffff;
     background-color: #604e43;
 }
 
-.catalog-brown:active {
+.catalog-reservation .catalog-brown:active {
     color: #857871;
     background-color: #503e33;
 }
