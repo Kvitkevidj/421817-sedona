@@ -261,7 +261,6 @@ img {
 .minus-icon {
     width: 40px;
     height: 40px;
-    margin-left: auto;
 
     background-image: url(../img/-grey.png);
     background-repeat: no-repeat;
@@ -292,7 +291,7 @@ img {
 .plus-icon:active {
     background-image: url(../img/+blue.png);
 }
-.search-item input[type="number"] {
+.search-people input[type="text"] {
     box-sizing: border-box;
     width: 40px;
     height: 40px;
@@ -312,6 +311,13 @@ img {
     border: 2px solid #e5e5e5;
 }
 
+.search-item:last-child label {
+    padding: 0 28px;
+}
+
+.search-people .search-item:first-child label {
+    padding-right: 58px;
+}
 .search .button {
     display: block;
     width: 100%;
