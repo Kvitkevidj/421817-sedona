@@ -40,13 +40,21 @@ img {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
     color: #000000;
     margin: 15px 70px; 
     padding: 0 0;
 }
 
+.site-navigation li:nth-child(2) {
+    margin-left: 149px;
+}
+.site-navigation li:nth-child(3) {
+    margin-left: 388px;
+}
+.site-navigation li:nth-child(4) {
+    margin-left: 165px;
+}
 
 .site-navigation a.site-navigation-hotels,
 .site-navigation a.site-navigation-hotels::after,
@@ -125,8 +133,8 @@ img {
 .features-item h3 {
     width: 150px;
     margin: auto;
-    padding-top: 48px;
-    padding-bottom: 25px;
+    padding-top: 45px;
+    padding-bottom: 24px;
     
     font-size: 21px;
     line-height: 21px;
@@ -148,8 +156,13 @@ img {
     background-color: #83B3D0;
 }
 
+.white h3 {
+    padding-top: 48px;
+    padding-bottom: ;
+}
+
 .white p {
-    width: 310px;
+    width: 320px;
     margin: auto;
     padding-bottom: 20px;
     font-size: 14px;
@@ -168,7 +181,7 @@ img {
     list-style: none;
     
     padding: 0;
-    margin: 59px 0;
+    margin: 58px 0;
     margin-bottom: 67px;
 }
 
@@ -176,15 +189,22 @@ img {
     text-align: center;
 }
 
+.services-item svg {
+    width: 74px; 
+    height: 70px;
+    
+}
+
 .services-item h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    padding-top: 4px;
 }
 
 .services-item p {
     width: 285px;
-    
+    padding-top: 3px;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -843,12 +863,12 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 95px;
 }
 
 .academy {
-    width: 120px;
+    width: 115px;
     margin-left: 10px;
+    margin-right: 100px;
 }
 .academy:hover path {
     fill: #81b3d2;
