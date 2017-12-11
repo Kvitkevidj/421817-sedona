@@ -7,11 +7,14 @@ body {
     line-height: 21px;
     color: #000000;
     text-transform: uppercase;
+    background-color: #f2f2f2;
 }
 
 .center {
     width: 1200px;  
     margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); 
+    background-color: #ffffff;
 }
 a {
     text-decoration: none;
@@ -35,6 +38,8 @@ img {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    
+    background-color: #ffffff;
 }
 
 .site-navigation {
@@ -42,8 +47,8 @@ img {
     flex-wrap: wrap;
     list-style: none;
     color: #000000;
-    margin: 15px 70px; 
-    padding: 0 0;
+    margin: 0; 
+    padding: 15px 70px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -103,6 +108,8 @@ img {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 35px;
+    
+    background-color: #ffffff;
 }
 
 .arizona {
@@ -414,6 +421,7 @@ img {
 
 .filters-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-image: url(../img/filter-bg.jpg);
     background-color: #000203;
@@ -450,8 +458,6 @@ img {
 }
 
 .filter-range {
-    margin: 50px 70px;
-    
     color: #ffffff;
     text-transform: uppercase;
     
@@ -474,14 +480,19 @@ img {
     width: 150px;
     margin-top: 30px;
     margin-bottom: 0;
+    margin-left: 70px;
     margin-right: auto;
 }
 
 .cost {
     width: 320px;
     margin-top: 30px;
-    margin-bottom: 0;
     margin-right: 60px;
+}
+
+.filter-range-cost {
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-range-title {
@@ -545,7 +556,7 @@ img {
 .range-controls {
     position: relative;
 
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 }
 
 .range-controls .scale {
@@ -590,6 +601,7 @@ img {
 .btn-transparent {
     display: block;
     margin: 0 auto;
+    margin-left: 100px;
     padding: 6px 35px;
 
     font-size: 14px;
@@ -806,7 +818,7 @@ img {
 
 .footer-index {
     margin-top: -120px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .main-footer .container {
